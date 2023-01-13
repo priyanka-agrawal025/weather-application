@@ -13,15 +13,47 @@
         <h1 class="title has-text-centered notification is-dark">Weather Dashboard</h1>
     </header>
     <main>
-        <h2 class="subtitle ml-4 mt-5 has-text-weight-semibold">Search for a City:</h2>
-        <section class="">
-            <div class="control column is-3">
-                <input class="input is-focused" type="text" placeholder="Enter City Name">
+        <section class="columns">
+            <div class="control column is-3 block mt-5 ml-3">
+                <h2 class="subtitle block has-text-weight-semibold">Search for a City:</h2>
+                <input class="input is-focused block" type="text" placeholder="Enter City Name">
+                <button class="button is-primary block">Search</button>
+                <hr class="dropdown-divider">
             </div>
-            <button class="button is-primary ml-3">Search</button>
+            <div class="column is-9 block mt-5 mr-3">
+                <article class="tile is-child notification is-light">
+                <p class="title">City Name</p>
+                    <div class="content">
+                        <p class="subtitle">Temperature:</p>
+                        <p class="subtitle">Wind:</p>
+                        <p class="subtitle">Humidity:</p>
+                    </div>
+                </article>
+                </div>
+            </div>
+        </section>
+        <section class="">
+            <h3 class="title has-text-centered">5-Day Forecast</h3>
+            <div class="columns block is-flex is-justify-content-center">
+                <div class="block m-2 column is-1 notification is-primary">
+                    <p>Today</p>
+                </div>
+                <div class="block m-2 column is-1 notification is-primary">
+                    <p>Today</p>
+                </div>
+                <div class="block m-2 column is-1 notification is-primary">
+                    <p>Today</p>
+                </div>
+                <div class="block m-2 column is-1 notification is-primary">
+                    <p>Today</p>
+                </div>
+                <div class="block m-2 column is-1 notification is-primary">
+                    <p>Today</p>
+                </div>
+            </div>
         </section>
     </main>
-  
+  <!-- Create -->
     <script src="./assets/script.js"></script>
 </body>
 </html>
