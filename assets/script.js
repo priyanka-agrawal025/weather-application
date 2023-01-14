@@ -7,7 +7,7 @@ document.getElementById("sec-five-day-forecast").style.visibility = "hidden";
 document.getElementById("div-today-weather").style.visibility = "hidden";
 
 
-// Storing search criteria into Local Storage and displaying search result onto screen
+
 function storeCities(event) {
     event.preventDefault();
     var cityInput = document.getElementById("input-area");
@@ -79,10 +79,10 @@ function displayWeather(data) {
         document.getElementById("day-" + i).innerHTML = "";
         var nextDayCounter = (i * 8) - 1;
         //alert(nextDayCounter);
-        var dateWeather = Date.parse(data.list[nextDayCounter].dt_txt);
+        //var dateWeather = Date.parse(data.list[nextDayCounter].dt_txt);
 
         let hDate = document.createElement("h2");
-        hDate.innerHTML = dateWeather.toString("mm/dd/yyyy");
+        hDate.innerHTML = data.list[nextDayCounter].dt_txt;
         document.getElementById("day-" + i).appendChild(hDate);
 
         let pTemp = document.createElement("p");
@@ -105,13 +105,3 @@ function displayWeather(data) {
 
 
 searchButton.addEventListener("click", storeCities);
-
-
-// Make search history a clickable link which fetches data
-
-// Write fetch request to call lat and long API
-    // Fetch the city using lat and long coordinates
-
-// Create a template which can display the weather conditions
-
-// Use received data and display it to the screen with template created
