@@ -16,9 +16,10 @@
         <section class="columns">
             <div class="control column is-3 block mt-5 ml-3">
                 <h2 class="subtitle block has-text-weight-semibold">Search for a City:</h2>
-                <input class="input is-focused block" type="text" placeholder="Enter City Name">
-                <button class="button is-primary block">Search</button>
+                <input id="input-area" class="input is-focused block" type="text" placeholder="Enter City Name">
+                <button class="button is-primary block" id="search-button">Search</button>
                 <hr class="dropdown-divider">
+                <div id="search-history"></div>
             </div>
             <div class="column is-9 block mt-5 mr-3">
                 <article class="tile is-child notification is-light">
@@ -54,6 +55,11 @@
         </section>
     </main>
   <!-- Create -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"></script>
     <script src="./assets/script.js"></script>
+
 </body>
 </html>
