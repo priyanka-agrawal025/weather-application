@@ -1,2 +1,5 @@
-# Weekly Weather Application
-## This app allows users to search a city and receive a five-day weather forecast for that searched city. User searches will be saved to local storage and allow users to interact with previously searched cities. 
+# weather-application
+A weekly weather data application
+
+## Badges
+![Badge Image](https://img.shields.io/github/license/priyanka-agrawal025/dynamic-logo-generator)
